@@ -72,7 +72,7 @@ with chart_col1:
         hover_data=["Item_Type", "Item_Identifier"],
         title="Check for Price Clusters and Sales Trends"
     )
-    st.plotly_chart(fig_scatter, use_container_width=True)
+    st.plotly_chart(fig_scatter, width='stretch')
 
 with chart_col2:
     st.subheader("📊 Sales Contribution by Item Type")
@@ -82,4 +82,4 @@ with chart_col2:
         y="Item_Outlet_Sales",
         title="Total Revenue per Product Category"
     )
-    st.plotly_chart(fig_bar, use_container_width=True)
+    st.plotly_chart(fig_bar, width='stretch')
